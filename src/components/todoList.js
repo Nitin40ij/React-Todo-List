@@ -21,7 +21,7 @@ class TodoList extends React.Component {
         },3000)
   }
   removeBook = (id) =>{
-    if(window.confirm("Are you really want ti delete this book?")){
+    if(window.confirm("Are you really want to delete this book?")){
     const filterBooks=this.state.bookList.filter((book)=>book.id !==id)
     this.setState({bookList:filterBooks})
     this.setState({bookDeleted:"Your book has been deleted successfully"})
